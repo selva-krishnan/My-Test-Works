@@ -1,5 +1,3 @@
-package com.aa.flighthub.mte.utils;
-
 import static org.junit.Assert.*;
 
 import java.time.LocalDateTime;
@@ -24,22 +22,6 @@ public class CommonMessageUtilsTest extends AbstractTestUtils {
 		localDateTime = LocalDateTime.now();
 	}
 
-	@Test
-	public void testSerializable() {
-
-		assertTrue(CommonMessageUtils.isSerializable(null));
-
-		assertTrue(CommonMessageUtils.isSerializable(new String("")));
-
-		assertFalse(CommonMessageUtils.isSerializable(new Object()));
-
-		assertTrue(CommonMessageUtils.isPayloadSerializable(MessageBuilder.withPayload("Test").build()));
-
-		assertFalse(CommonMessageUtils.isPayloadSerializable(MessageBuilder.withPayload(new Object()).build()));
-
-		assertFalse(CommonMessageUtils.isPayloadSerializable(null));
-
-	}
 
 	@Test
 	public void testGetTimeInUTCFormat() {
