@@ -1,8 +1,3 @@
-/**
- * 
- */
-package com.aa.flighthub.mte.processor;
-
 import static org.junit.Assert.*;
 
 import java.time.Clock;
@@ -30,7 +25,7 @@ import com.aa.flighthub.mte.MessageKey;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:META-INF/spring/integration/mte-test-core-context.xml" })
-public class AbstractDeliveryProcessorTest extends AbstractMTEMessageProcessor {
+public class AbstractDeliveryProcessorTest {
 
 	@Autowired
 	@InjectMocks
